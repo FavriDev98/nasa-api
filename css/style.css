@@ -1,0 +1,50 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+
+#contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.grid-tile {
+  
+  overflow: hidden;
+  border: 1px solid #ccc;
+  height: 400px;
+  width: 300px;
+}
+
+.title {
+  padding: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title:hover {
+  -webkit-line-clamp: unset;
+  z-index: 1;
+  background-color: #fff;
+}
+
+h3{
+  font-size: 20px;
+}
+
+.description {
+  padding: 10px;
+  height: 40%;
+  overflow-y: auto;
+}
+
+
+.date {
+  height: 20%;
+  text-align: center;
+  padding: 10px;
+}
